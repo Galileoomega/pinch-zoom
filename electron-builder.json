@@ -2,9 +2,9 @@
   "artifactName": "TestApp-4.re",
   "productName": "eagle-frontend",
   "files": [
-    "./src/**/*",
-    "./build/**/*",
-    "**/app.js"
+    "*.js",
+    "build",
+    "node_modules"
   ],
   "directories": {
     "app": "./",
