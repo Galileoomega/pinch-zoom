@@ -3,7 +3,8 @@
   "productName": "eagle-frontend",
   "files": [
     "./src/**/*",
-    "./build/**/*"
+    "./build/**/*",
+    "**/app.js"
   ],
   "directories": {
     "app": "./",
