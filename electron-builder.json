@@ -19,6 +19,9 @@
     "target": "portable"
   },
   "linux": {
-    "target": "AppImage"
+    "artifactName": "pinch_zoom.AppImage",
+    "target": [
+      "AppImage"
+    ]
   }
 }
