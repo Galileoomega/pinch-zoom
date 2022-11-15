@@ -1,0 +1,23 @@
+{
+  "artifactName": "TestApp-4.re",
+  "productName": "eagle-frontend",
+  "files": [
+    "./src/**/*",
+    "./build/**/*"
+  ],
+  "directories": {
+    "app": "./",
+    "output": "./dist",
+    "buildResources": "./build"
+  },
+  "mac": {
+    "target": "zip",
+    "category": "io.busticated.testapp"
+  },
+  "win": {
+    "target": "portable"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}
