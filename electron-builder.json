@@ -1,66 +1,29 @@
 {
-  "artifactName": "TestApp-4.re",
-  "productName": "eagle-frontend",
-  "files": [
-    "**/*",
-    "!**/apps/eagle-frontend/**/*",
-    "**/apps/eagle-frontend/main.js",
-    "**/apps/eagle-frontend/dist/**/*",
-    "!node_modules/**/*",
-    "node_modules/@electron/**/*",
-    "!electron-builder.env",
-    "!fe_ut_logs.txt",
-    "!lexicon.md",
-    "!dist/**/*",
-    "!**/apps/libs/**/*",
-    "!.npmrc",
-    "!nx.json",
-    "!NXREADME.md",
-    "!.nycrc",
-    "!.prettierignore",
-    "!.prettierrc",
-    "!pscp.exe",
-    "!README.md",
-    "!testplan.md",
-    "!.validaterc",
-    "!**/apps/eagle-logger-server/**/*",
-    "!**/apps/eagle-tools/**/*",
-    "!**/apps/eagle-backend/**/*",
-    "!**/.vscode",
-    "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
-    "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
-    "!**/node_modules/*.d.ts",
-    "!**/node_modules/.bin",
-    "!**/*.ts",
-    "!*.code-workspace",
-    "!LICENSE.md",
-    "!package.json",
-    "!package-lock.json",
-    "!src/",
-    "!e2e/",
-    "!hooks/",
-    "!angular.json",
-    "!_config.yml",
-    "!karma.conf.js",
-    "!tsconfig.json",
-    "!.eslintrc.json"
-  ],
-  "directories": {
-    "app": "./",
-    "output": "./dist",
-    "buildResources": "./build"
-  },
-  "mac": {
-    "target": "zip",
-    "category": "io.busticated.testapp"
-  },
-  "win": {
-    "target": "portable"
-  },
-  "linux": {
-    "artifactName": "pinch_zoom.AppImage",
-    "target": [
-      "AppImage"
-    ]
+  "build": {
+    "productName": "Test App",
+    "artifactName": "TestApp-${version}.${ext}",
+    "appId": "io.busticated.testapp",
+    "files": [
+      "./src/**/*",
+      "./build/**/*"
+    ],
+    "directories": {
+      "app": "./",
+      "output": "./dist",
+      "buildResources": "./build"
+    },
+    "mac": {
+      "target": "zip",
+      "category": "io.busticated.testapp"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "linux": {
+      "artifactName": "pinch_zoom.AppImage",
+      "target": [
+        "AppImage"
+      ]
+    }
   }
 }
