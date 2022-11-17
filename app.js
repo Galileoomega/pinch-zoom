@@ -13,7 +13,6 @@ function createWindow () {
       contextIsolation: false
     }
   });
-  mainWindow.webContents.openDevTools();
   mainWindow.maximize();
 
   mainWindow.loadURL(
