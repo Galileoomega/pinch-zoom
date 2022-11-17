@@ -4,6 +4,9 @@
     "output": "release/"
   },
   "files": [
+    "**/*",
+    "!**/apps/eagle-frontend/**/*",
+    "**/apps/eagle-frontend/main.js",
     "**/apps/eagle-frontend/dist/**/*",
     "!node_modules/**/*",
     "node_modules/@electron/**/*",
